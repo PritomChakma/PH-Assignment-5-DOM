@@ -30,9 +30,11 @@
       rel="stylesheet"
     />
   </head>
-  <body class="lexenda">
+  <body class="">
     <!-- Nav section start -->
-    <div class="">
+    <div
+      class="sticky top-0 bg-opacity-50 backdrop-blur-md pb-3 shadow-lg z-10"
+    >
       <div
         class="navbar bg-base-100 md:px-10 md:py-5 nav-bg-color bg-[#f7f4ed] backdrop-blur-sm"
       >
@@ -40,9 +42,9 @@
           <button id="question-btn" class="btn bg-[#b4f461]">Blog</button>
         </div>
         <div class="navbar-center">
-          <div class="flex gap-2">
+          <div class="md:flex gap-2">
             <div class="w-7 h-7 md:w-10 md:h-10">
-              <img src="assets/logo.png" alt="" />
+              <img class="" src="assets/logo.png" alt="" />
             </div>
             <div class="md:text-2xl font-bold"><h1>Donate Bangladesh</h1></div>
           </div>
@@ -57,7 +59,7 @@
         </div>
       </div>
       <!-- Donation and History Button -->
-      <div class="flex gap-2 mx-auto justify-center mt-3 backdrop-blur-sm">
+      <div class="flex gap-2 mx-auto justify-center mt-5 backdrop-blur-sm">
         <button id="donation-button" class="btn btn-xs btn-md btn-color">
           Donation
         </button>
@@ -181,7 +183,9 @@
 
       <!-- tranjection history Start -->
       <div id="history-section" class="hidden">
-        <h1 class="text-3xl font-bold text-center">Tranjection History</h1>
+        <h1 class="text-xl md:text-3xl font-bold text-center mt-5">
+          Tranjection History
+        </h1>
 
         <div id="tranjection-container"></div>
       </div>

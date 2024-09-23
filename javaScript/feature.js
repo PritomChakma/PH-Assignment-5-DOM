@@ -1,8 +1,13 @@
+const color = (document.getElementById(
+  "donation-button"
+).style.backgroundColor = "#B4F461");
+
 // donation sction
 document
   .getElementById("donation-button")
   .addEventListener("click", function () {
     showSectionById("donation-section");
+
     // makeColor();
   });
 document
