@@ -40,6 +40,21 @@ document.getElementById("donate-1").addEventListener("click", function () {
   } else if (0 <= recentBalance) {
     document.getElementById("account-balance").innerText = recentBalance;
     document.getElementById("donate-amount-1").innerText = newBalance;
+
+    // tranjection History
+    const p = document.createElement("p");
+    p.innerHTML = `
+<div  class="alert shadow-lg mt-5">
+  <div>
+   <div class="text-xl text-center ">
+    <div>${inputDonate1} Tk Donated For Food ai Noakhali , Bangladesh</div>
+    <div></div>
+    </div>
+</div>
+    `;
+
+    // should be common function
+    document.getElementById("tranjection-container").appendChild(p);
   } else {
     alert("failed");
   }
@@ -59,6 +74,20 @@ document.getElementById("donate-2").addEventListener("click", function () {
   } else if (0 <= recentBalance2) {
     document.getElementById("account-balance").innerText = recentBalance2;
     document.getElementById("donate-amount-2").innerText = newBalance2;
+
+    // tranjection History
+    const p = document.createElement("p");
+    p.innerHTML = `<div  class="alert shadow-lg mt-5">
+  <div>
+   <div class="text-xl text-center ">
+    <div>${inputDonate2} Tk Donated For Food ai Feni , Bangladesh</div>
+    <div></div>
+    </div>
+</div>
+    `;
+
+    // should be common function
+    document.getElementById("tranjection-container").appendChild(p);
   } else {
     alert("failed");
   }
@@ -78,6 +107,21 @@ document.getElementById("donate-3").addEventListener("click", function () {
   } else if (0 <= recentBalance3) {
     document.getElementById("account-balance").innerText = recentBalance3;
     document.getElementById("donate-amount-3").innerText = newBalance3;
+
+    // tranjection History
+    const p = document.createElement("p");
+    p.innerHTML = `
+    <div  class="alert shadow-lg mt-5">
+  <div>
+   <div class="text-xl text-center ">
+    <div>${inputDonate3} Tk Donated For injure Student in the Quota Movement </div>
+    <div></div>
+    </div>
+</div>
+    `;
+
+    // should be common function
+    document.getElementById("tranjection-container").appendChild(p);
   } else {
     alert("failed");
   }

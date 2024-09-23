@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Question</title>
+
+    <!-- Daisyui and Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwsome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- nav section start -->
+    <nav>
+      <div
+        class="navbar bg-base-100 md:px-10 md:py-5 nav-bg-color bg-[#F9F7F3] backdrop-blur-sm"
+      >
+        <div class="navbar-start">
+          <button id="home-btn" class="btn bg-[#b4f461]">Home</button>
+        </div>
+        <div class="navbar-center">
+          <div class="flex gap-2">
+            <div class="w-7 h-7 md:w-10 md:h-10">
+              <img src="assets/logo.png" alt="" />
+            </div>
+            <div class="md:text-2xl font-bold"><h1>Donate Bangladesh</h1></div>
+          </div>
+        </div>
+
+        <div class="navbar-end">
+          <div class="flex gap-2">
+            <div><img src="assets/coin.png" alt="" /></div>
+            <div id="account-balance" class="md:text-xl">5000</div>
+            <p class="font-bold md:text-xl">BDT</p>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- nav sectipon end -->
+
+    <!-- main section start -->
+    <main class="w-11/12 mx-auto mt-10">
+      <!-- question title -->
+      <div class="flex gap-2">
+        <div><h1 class="font-bold text-2xl md:text-4xl">Important FAQ</h1></div>
+        <div>
+          <i class="fa-regular fa-circle-question text-3xl md:text-5xl"></i>
+        </div>
+      </div>
+
+      <!-- question and ans -->
+      <div class="collapse collapse-arrow bg-base-200 mt-10">
+        <input type="radio" name="my-accordion-2" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is Document Object Model (DOM) ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            The Document Object Model (DOM) is a programming interface for web
+            documents. It represents the structure of a webpage as a tree of
+            objects, where each object corresponds to a part of the document.
+            The DOM allows programming languages like JavaScript to interact
+            with and manipulate the content, structure, and style of a
+            webpage.<br />
+
+            <span class="font-bold">Here’s a breakdown:</span><br />
+            1. Document: Refers to the webpage (HTML document). <br />
+            2. Object: Each element, attribute, and piece of text in the HTML
+            document is represented as an object (e.g., headings, paragraphs,
+            divs).<br />
+            3. Model: The objects are organized in a structured way, typically
+            as a tree, where each node represents part of the document.
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mt-5">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How Do you Select Element From The DOM ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            To select elements from the DOM in JavaScript, you can use several
+            methods. Here's a simple overview: <br />
+            <span class="font-bold"> 1. getElementById()</span>
+            What it does: Selects one element by its unique id.<br />
+            Example: document.getElementById("header");<br />
+            Use: When you want a specific element with a known id.<br />
+
+            <span class="font-bold">2. getElementsByClassName()</span><br />
+            What it does: Selects all elements with a specific class. It returns
+            a list (HTMLCollection).<br />
+            Example: document.getElementsByClassName("menu-item");<br />
+            Use: When selecting multiple elements with the same class.<br />
+
+            <span class="font-bold"> 3. getElementsByTagName()</span><br />
+            What it does: Selects all elements with a specific tag (like div, p,
+            etc.).<br />
+            Example: document.getElementsByTagName("p");<br />
+            Use: When selecting all elements of a specific type.<br />
+
+            <span class="font-bold"> 4. querySelector()</span><br />
+            What it does: Selects the first element that matches a CSS selector
+            (like #id, .class, or tag).<br />
+            Example: document.querySelector(".menu-item");<br />
+            Use: For more flexible and precise selection of one element.<br />
+
+            <span class="font-bold"> 5. querySelectorAll()</span><br />
+            What it does: Selects all elements that match a CSS selector. It
+            returns a list (NodeList).<br />
+            Example: document.querySelectorAll("div.box");<br />
+            Use: When you need to select multiple elements using complex CSS
+            rules.<br />
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mt-5">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          What is Event Delegetion in the contex of the DOM and why is it
+          usefull ?
+        </div>
+        <div class="collapse-content">
+          <p>
+            Event delegation is a technique in JavaScript that allows you to
+            handle events at a higher level in the DOM, instead of attaching
+            event listeners to specific child elements. This is especially
+            useful when you have many similar elements or dynamically added
+            elements that need event handling.<br />
+
+            <span class="font-bold text-xl"> How Event Delegation Works:</span
+            ><br />
+            Instead of adding event listeners to individual child elements, you
+            attach a single event listener to a common parent element. When an
+            event occurs, it "bubbles" up through the DOM (event bubbling), and
+            you can capture that event at the parent level. From there, you can
+            check if the event originated from a specific child element and
+            handle it accordingly.<br />
+
+            <span class="font-bold text-xl">
+              Why Event Delegation is Useful:</span
+            ><br />
+
+            <span class="font-bold">1.Fewer Event Listeners:</span> Instead of
+            attaching a listener to every element (which can be inefficient),
+            you can use one listener at the parent level. This reduces memory
+            usage and improves performance. <br />
+
+            <span class="font-bold"> 2. Handles Dynamic Content:</span> Event
+            delegation automatically works for new elements added to the DOM. If
+            you dynamically add more li elements to the list, the single event
+            listener on the will still ul work for them without needing any
+            extra code.<br />
+
+            <span class="font-bold">3.Simpler Code:</span>It’s easier to
+            maintain one event listener on a parent element rather than many
+            listeners on individual child elements. This simplifies your code
+            and makes it more maintainable.<br />
+            <span class="font-bold">4.Performance:</span>When dealing with many
+            elements (like in long lists or tables), using individual event
+            listeners can become slow. Event delegation ensures the event is
+            handled efficiently with a single listener.<br />
+          </p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200 mt-5">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">
+          How do You Manipulate am Elements Attributes and style using the DOM
+        </div>
+        <div class="collapse-content">
+          <p>
+            <span class="font-bold">
+              To manipulate an element’s attributes and style using the DOM in
+              JavaScript, follow these key steps:</span
+            ><br />
+
+            <span class="font-bold"> 1. Access the Element:</span> Use methods
+            like document.getElementById(), querySelector(), or
+            getElementsByClassName() to select the element you want to
+            manipulate.<br />
+
+            <span class="font-bold">2. Manipulating Attributes:</span>
+            Use setAttribute() to add or change an attribute (e.g.,
+            element.setAttribute('src', 'image.jpg')).<br />
+            Use getAttribute() to retrieve an attribute’s value.<br />
+            Use removeAttribute() to delete an attribute.<br />
+
+            <span class="font-bold">3. Manipulating Styles:</span>
+            Access the element’s style property (e.g., element.style.color =
+            'blue';) to modify its inline CSS styles.<br />
+            You can change multiple properties, like
+            element.style.backgroundColor = 'red'; or element.style.fontSize =
+            '20px';.<br />
+          </p>
+        </div>
+      </div>
+    </main>
+    <!-- main sectioln End -->
+  </body>
+</html>
