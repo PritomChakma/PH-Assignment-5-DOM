@@ -37,7 +37,7 @@ document.getElementById("donate-1").addEventListener("click", function () {
   if (isNaN(inputDonate1)) {
     alert("Failed to Transfer");
     return;
-  } else if (0 <= recentBalance) {
+  } else if (0 <= inputDonate1 && 0 <= recentBalance) {
     document.getElementById("account-balance").innerText = recentBalance;
     document.getElementById("donate-amount-1").innerText = newBalance;
 
@@ -71,7 +71,7 @@ document.getElementById("donate-2").addEventListener("click", function () {
   if (isNaN(inputDonate2)) {
     alert("Failed to Transfer");
     return;
-  } else if (0 <= recentBalance2) {
+  } else if (0 <= inputDonate2 && 0 <= recentBalance2) {
     document.getElementById("account-balance").innerText = recentBalance2;
     document.getElementById("donate-amount-2").innerText = newBalance2;
 
@@ -104,7 +104,7 @@ document.getElementById("donate-3").addEventListener("click", function () {
   if (isNaN(inputDonate3)) {
     alert("Failed to Transfer");
     return;
-  } else if (0 <= recentBalance3) {
+  } else if (0 <= inputDonate3 && 0 <= recentBalance3) {
     document.getElementById("account-balance").innerText = recentBalance3;
     document.getElementById("donate-amount-3").innerText = newBalance3;
 

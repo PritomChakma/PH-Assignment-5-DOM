@@ -25,10 +25,9 @@ function showSectionById(id) {
 
 function makeColor(id) {
   document.getElementById("donation-section").classList.add("hidden");
-  document.getElementById("donation-button").style.backgroundColor = "#b4f461";
-  document.getElementById("history-button").style.backgroundColor = "#b4f461";
 }
 
 function newTab(id) {
   window.location.href = id;
+  return;
 }
