@@ -28,6 +28,10 @@ document.getElementById("donate-1").addEventListener("click", function () {
 
     // should be common function
     document.getElementById("tranjection-container").appendChild(p);
+
+    // **********
+
+    // **********
   } else {
     alert("failed");
   }
