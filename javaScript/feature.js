@@ -18,9 +18,11 @@ document
   });
 
 //   nav button for another page added
+
 document.getElementById("question-btn").addEventListener("click", function () {
   newTab("../question.html");
 });
-document.getElementById("home-btn").addEventListener("click", function () {
+
+document.getElementById("button-primar").addEventListener("click", function () {
   newTab("../index.html");
 });

@@ -1,31 +1,3 @@
-// **********  noakhali Donate **************
-// document.getElementById("donate-1").addEventListener("click", function () {
-//   // input Money
-//   const inputDonate1 = document.getElementById("input-donate-1").value;
-//   const donateMoney1 = parseFloat(inputDonate1);
-
-//   // account balance
-//   const myBalance = document.getElementById("account-balance").innerText;
-//   const accountBalance = parseFloat(myBalance);
-//   // donate money amount
-//   const donateAmount1 = document.getElementById("donate-amount-1").innerText;
-//   const donateAmountMoney1 = parseFloat(donateAmount1);
-
-//   //   count balance
-//   const recentBalance = accountBalance - donateMoney1;
-//   const newBalance = donateAmountMoney1 + donateMoney1;
-//   //   inNaN validation on addMoney
-//   if (isNaN(donateMoney1)) {
-//     alert("faield to add Money");
-//     return;
-//   } else if (0 <= recentBalance) {
-//     document.getElementById("account-balance").innerText = recentBalance;
-//     document.getElementById("donate-amount-1").innerText = newBalance;
-//   } else {
-//     alert("No enough money");
-//   }
-// });
-
 // **********  Noakhali Donate **************
 document.getElementById("donate-1").addEventListener("click", function () {
   const inputDonate1 = inputValueById("input-donate-1");
@@ -46,8 +18,9 @@ document.getElementById("donate-1").addEventListener("click", function () {
     p.innerHTML = `
 <div  class="alert shadow-lg mt-5">
   <div>
-   <div class="text-xl text-center ">
+   <div class="text-xl ">
     <div>${inputDonate1} Tk Donated For Food ai Noakhali , Bangladesh</div>
+    <div>${new Date().toLocaleString()}</div>
     <div></div>
     </div>
 </div>
@@ -75,12 +48,13 @@ document.getElementById("donate-2").addEventListener("click", function () {
     document.getElementById("account-balance").innerText = recentBalance2;
     document.getElementById("donate-amount-2").innerText = newBalance2;
 
-    // tranjection History
+    // ***** tranjection History *******
     const p = document.createElement("p");
     p.innerHTML = `<div  class="alert shadow-lg mt-5">
   <div>
-   <div class="text-xl text-center ">
+   <div class="text-xl">
     <div>${inputDonate2} Tk Donated For Food ai Feni , Bangladesh</div>
+        <div>${new Date().toLocaleString()}</div>
     <div></div>
     </div>
 </div>
@@ -113,8 +87,9 @@ document.getElementById("donate-3").addEventListener("click", function () {
     p.innerHTML = `
     <div  class="alert shadow-lg mt-5">
   <div>
-   <div class="text-xl text-center ">
+   <div class="text-xl">
     <div>${inputDonate3} Tk Donated For injure Student in the Quota Movement </div>
+        <div>${new Date().toLocaleString()}</div>
     <div></div>
     </div>
 </div>
